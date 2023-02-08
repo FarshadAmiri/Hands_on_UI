@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <headd>
+        <title>Forms</title>
+    </headd>
+    <body>
+        <h1>All forms</h1>
+        <h2>Text Form</h1>
+        <form action="/registration" method="POST">
+            <label for="Username">Username:</label><br>
+            <input type="text" name="Username"><br>
+            <label for="Password">Password:</label><br>
+            <input type="password" name="Password"><br>
+            <p><b>Select which type of foods you like:</b></p>
+            <input type="checkbox" name="Iranian food" value="Iranian_food">
+            <label for="Iranian food">Iranian dishes and traditional cuisins</label><Br>
+            <input type="checkbox" name="Italian food" value="Italian_food">
+            <label for="Italian food">Italian foods (Pizza & Pasta)</label><Br>
+            <input type="checkbox" name="Fast food" value="Fast_food">
+            <label for="Fast food">Burgers and Sandwiches</label><Br>
+            <p><B>Select your age</B></p>
+            <input type="range" name="Age" min="8" max="70" value="24" step="1" oninput="this.nextElementSibling.value = this.value">
+            <output>24</output>
+            <!-- <label for="Age">Age</label> -->
+            <p><b>Select your gender:</b></p>
+            <input type="radio" name="Gender" id="male" value="male">
+            <label for="male">Male</label><Br>
+            <input type="radio" name="Gender" id="female" value="female">
+            <label for="female">Female</label><br>
+
+            <p><b>Your last degree:</b></p>
+            <select name="edu">
+                <option value="diploma">Highschool diploma</option>
+                <option value="bachelor">Bachelor's degree</option>
+                <option value="master">Master's degree</option>
+                <option value="phd">Ph.D and higher</option>
+            </select>
+                
+            <p><b>Any biography to write it down here:</b></p>
+            <textarea name="Bio" maxlength="160" rows="5"></textarea><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
